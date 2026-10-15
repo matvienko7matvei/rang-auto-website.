@@ -103,3 +103,32 @@
   const year = document.querySelector("#current-year");
   if (year) year.textContent = String(new Date().getFullYear());
 })();
+/* Connect the visual search to the existing enquiry form without pretending to send a lead. */
+(() => {
+  const finder = document.querySelector("#finder-form");
+  if (!finder) return;
+  finder.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const country = finder.querySelector('input[name="finder-country"]:checked')?.value || "Япония";
+    const body = document.querySelector("#finder-body")?.value || "";
+    const budget = document.querySelector("#finder-budget")?.value || "";
+    const countryButton = Array.from(document.querySelectorAll("[data-country]")).find(el => el.dataset.country === country);
+    countryButton?.click();
+    const typeField = document.querySelector("#car-type");
+    const budgetField = document.querySelector("#budget");
+    if (typeField && body) {
+      const match = Array.from(typeField.options || []).find(opt => opt.value === body || opt.textContent.trim() === body);
+      if (match) typeField.value = match.value;
+    }
+    if (budgetField && budget) {
+      const match = Array.from(budgetField.options || []).find(opt => opt.value === budget || opt.textContent.trim() === budget);
+      if (match) budgetField.value = match.value;
+    }
+    const details = document.querySelector("#details");
+    if (details) {
+      const additions = ["Запрос из быстрого подбора", "Страна: " + country, body && "Тип: " + body, budget && "Бюджет: " + budget].filter(Boolean).join("; ");
+      details.value = details.value.trim() ? details.value.trim() + "\n" + additions : additions;
+    }
+    document.querySelector("#request")?.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+  });
+})();

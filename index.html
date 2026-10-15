@@ -32,7 +32,7 @@
       </button>
 
       <nav class="main-nav" id="main-nav" aria-label="Главная навигация">
-        <a href="#directions">Направления</a>
+        <a href="#search">Подбор авто</a><a href="#directions">Направления</a>
         <a href="#process">Как работаем</a>
         <a href="#benefits">Преимущества</a>
         <a href="#faq">Вопросы</a>
@@ -51,7 +51,7 @@
           <p class="hero-lead">Подберём автомобиль под ваши задачи и бюджет, поможем с проверкой, покупкой и доставкой. Один понятный маршрут — от первого запроса до получения машины.</p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#request">Рассчитать подбор <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#search">Подобрать автомобиль <span aria-hidden="true">↗</span></a>
             <a class="button button-quiet" href="#process"><span class="play-icon" aria-hidden="true">▶</span> Как это работает</a>
           </div>
 
@@ -87,6 +87,29 @@
     <section class="ticker" aria-label="Направления работы">
       <div class="ticker-track">
         <span>ЯПОНИЯ <b>✳</b></span><span>ЮЖНАЯ КОРЕЯ <b>✳</b></span><span>КИТАЙ <b>✳</b></span><span>ПОДБОР ПОД ВАШ БЮДЖЕТ <b>✳</b></span><span>СОПРОВОЖДЕНИЕ СДЕЛКИ <b>✳</b></span>
+      </div>
+    </section>
+
+    <section class="quick-search" id="search" aria-labelledby="search-title">
+      <div class="container">
+        <div class="quick-search-heading">
+          <div><p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> С чего начнём?</p><h2 id="search-title">Найдём автомобиль <em>под ваш ритм.</em></h2></div>
+          <p>Выберите основные параметры — мы подготовим текст запроса для обсуждения подходящих вариантов.</p>
+        </div>
+        <form class="finder-form" id="finder-form">
+          <fieldset class="finder-countries">
+            <legend>01 / Страна покупки</legend>
+            <div class="finder-country-options">
+              <label><input type="radio" name="finder-country" value="Япония" checked><span>Япония</span></label>
+              <label><input type="radio" name="finder-country" value="Южная Корея"><span>Южная Корея</span></label>
+              <label><input type="radio" name="finder-country" value="Китай"><span>Китай</span></label>
+            </div>
+          </fieldset>
+          <div class="finder-field"><label for="finder-body">02 / Тип автомобиля</label><select id="finder-body"><option value="">Любой тип</option><option>Седан</option><option>Кроссовер</option><option>Внедорожник</option><option>Хэтчбек</option><option>Минивэн</option><option>Другой</option></select></div>
+          <div class="finder-field"><label for="finder-budget">03 / Бюджет</label><select id="finder-budget"><option value="">Пока не определился</option><option>До 1,5 млн ₽</option><option>1,5–2,5 млн ₽</option><option>2,5–4 млн ₽</option><option>От 4 млн ₽</option></select></div>
+          <button class="finder-submit" type="submit">Подобрать варианты <span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="finder-disclaimer">Это подбор параметров, а не каталог наличия или автоматический расчёт цены. Точную стоимость уточняем индивидуально.</p>
       </div>
     </section>
 

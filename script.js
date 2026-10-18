@@ -132,3 +132,15 @@
     document.querySelector("#request")?.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
   });
 })();
+
+/* Figma hero country selection */
+(() => {
+ const options = [...document.querySelectorAll('[data-hero-country]')];
+ const name = document.getElementById('hero-country-name');
+ const duration = document.querySelector('.hero-duration');
+ const cases = { 'Китай': ['КИТАЯ','ОТ 25 ДНЕЙ'], 'Корея': ['КОРЕИ','ПО ЗАПРОСУ'], 'Япония': ['ЯПОНИИ','ПО ЗАПРОСУ'] };
+ options.forEach(button=>button.addEventListener('click',()=>{
+   options.forEach(other=>other.classList.toggle('is-active',other===button));
+   const item=cases[button.dataset.heroCountry];if(name)name.textContent=item[0];if(duration)duration.textContent=item[1];
+ }));
+})();

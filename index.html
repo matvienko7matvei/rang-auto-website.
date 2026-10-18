@@ -24,7 +24,7 @@
   <div class="figma-container header-inner">
     <a class="brand figma-brand" href="#top" aria-label="РАНГ АВТО — главная"><span class="brand-mark" aria-hidden="true">R<span>A</span></span><span class="brand-name"><strong>РАНГ</strong><small>АВТО</small></span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Открыть меню</span></button>
-    <nav class="main-nav" id="main-nav" aria-label="Главная навигация"><a href="#showcase">Каталог</a><a href="#search">Калькулятор</a><a href="#benefits">О компании</a><a href="#contacts">Контакты</a></nav>
+    <nav class="main-nav" id="main-nav" aria-label="Главная навигация"><a href="#showcase">Каталог</a><a href="#showcase">Каталог</a><a href="#benefits">О компании</a><a href="#contacts">Контакты</a></nav>
     <div class="header-icons" aria-hidden="true"><span>⌕</span><span>♡</span></div>
     <a class="header-cta" href="#request">Заказать звонок</a>
   </div>
@@ -51,251 +51,37 @@
   </div>
 </section>
 
-    <section class="ticker" aria-label="Направления работы">
-      <div class="ticker-track">
-        <span>ЯПОНИЯ <b>✳</b></span><span>ЮЖНАЯ КОРЕЯ <b>✳</b></span><span>КИТАЙ <b>✳</b></span><span>ПОДБОР ПОД ВАШ БЮДЖЕТ <b>✳</b></span><span>СОПРОВОЖДЕНИЕ СДЕЛКИ <b>✳</b></span>
-      </div>
-    </section>
-
-    <section class="quick-search" id="search" aria-labelledby="search-title">
-      <div class="container">
-        <div class="quick-search-heading">
-          <div><p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> С чего начнём?</p><h2 id="search-title">Найдём автомобиль <em>под ваш ритм.</em></h2></div>
-          <p>Выберите основные параметры — мы подготовим текст запроса для обсуждения подходящих вариантов.</p>
-        </div>
-        <form class="finder-form" id="finder-form">
-          <fieldset class="finder-countries">
-            <legend>01 / Страна покупки</legend>
-            <div class="finder-country-options">
-              <label><input type="radio" name="finder-country" value="Япония" checked><span>Япония</span></label>
-              <label><input type="radio" name="finder-country" value="Южная Корея"><span>Южная Корея</span></label>
-              <label><input type="radio" name="finder-country" value="Китай"><span>Китай</span></label>
-            </div>
-          </fieldset>
-          <div class="finder-field"><label for="finder-body">02 / Тип автомобиля</label><select id="finder-body"><option value="">Любой тип</option><option>Седан</option><option>Кроссовер</option><option>Внедорожник</option><option>Хэтчбек</option><option>Минивэн</option><option>Другой</option></select></div>
-          <div class="finder-field"><label for="finder-budget">03 / Бюджет</label><select id="finder-budget"><option value="">Пока не определился</option><option>До 1,5 млн ₽</option><option>1,5–2,5 млн ₽</option><option>2,5–4 млн ₽</option><option>От 4 млн ₽</option></select></div>
-          <button class="finder-submit" type="submit">Подобрать варианты <span aria-hidden="true">↗</span></button>
-        </form>
-        <p class="finder-disclaimer">Это подбор параметров, а не каталог наличия или автоматический расчёт цены. Точную стоимость уточняем индивидуально.</p>
-      </div>
-    </section>
-
-    <section class="section section-light" id="directions">
-      <div class="container">
-        <div class="section-heading heading-split">
-          <div>
-            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Направления</p>
-            <h2>Три страны.<br><em>Много возможностей.</em></h2>
-          </div>
-          <p class="section-intro">У каждого рынка свои особенности. Поможем определить, где искать подходящий автомобиль, и объясним нюансы до того, как вы примете решение.</p>
-        </div>
-
-        <div class="country-grid">
-          <article class="country-card country-japan">
-            <div class="country-card-top"><span class="country-index">01 / РЫНОК</span><span class="country-symbol" aria-hidden="true">日</span></div>
-            <div class="country-art art-japan" aria-hidden="true"><span class="sun-disc"></span><span class="mountain"></span><span class="road-line"></span></div>
-            <div class="country-card-body">
-              <h3>Япония</h3>
-              <p>Для тех, кто ценит выбор, ухоженные автомобили и аукционную историю.</p>
-              <a href="#request" class="text-link" data-country-link="Япония">Подобрать из Японии <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="country-card country-korea">
-            <div class="country-card-top"><span class="country-index">02 / РЫНОК</span><span class="country-symbol" aria-hidden="true">韓</span></div>
-            <div class="country-art art-korea" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="art-dot"></span></div>
-            <div class="country-card-body">
-              <h3>Южная Корея</h3>
-              <p>Современные модели, комфортные комплектации и большой выбор классов.</p>
-              <a href="#request" class="text-link" data-country-link="Южная Корея">Подобрать из Кореи <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="country-card country-china">
-            <div class="country-card-top"><span class="country-index">03 / РЫНОК</span><span class="country-symbol" aria-hidden="true">中</span></div>
-            <div class="country-art art-china" aria-hidden="true"><span class="tower tower-one"></span><span class="tower tower-two"></span><span class="tower tower-three"></span><span class="horizon"></span></div>
-            <div class="country-card-body">
-              <h3>Китай</h3>
-              <p>Широкий выбор новых моделей, технологий и автомобилей на разных бюджетах.</p>
-              <a href="#request" class="text-link" data-country-link="Китай">Подобрать из Китая <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-        </div>
-        <p class="fine-print">Конкретные условия, доступность моделей, сроки и итоговая стоимость рассчитываются индивидуально после уточнения запроса.</p>
-      </div>
-    </section>
-
-
-    <section class="section showcase-section" id="showcase" aria-labelledby="showcase-title">
-      <div class="container">
-        <div class="section-heading heading-split">
-          <div><p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Витрина направлений / RANG SELECT</p>
-          <h2 id="showcase-title">Ваш автомобиль.<br><em>Ваш сценарий.</em></h2></div>
-          <p class="section-intro">Не выдаём примерные варианты за автомобили в наличии. Выберите направление поиска — обсудим модели, бюджет и доступные предложения.</p>
-        </div>
-        <div class="showcase-grid">
-          <article class="showcase-card"><div class="showcase-image"><img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=80" alt="Седан — пример класса автомобиля" loading="lazy"><span class="showcase-tag">01 / ГОРОД</span></div><div class="showcase-copy"><span>СЕДАНЫ И ХЭТЧБЕКИ</span><h3>Город в вашем ритме</h3><p>Манёвренность, комфорт и продуманные расходы.</p><a href="#request" data-country-link="Не определился">Обсудить подбор ↗</a></div></article>
-          <article class="showcase-card"><div class="showcase-image"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80" alt="Кроссовер — пример класса автомобиля" loading="lazy"><span class="showcase-tag">02 / ПУТЕШЕСТВИЯ</span></div><div class="showcase-copy"><span>КРОССОВЕРЫ И SUV</span><h3>Больше свободы</h3><p>Для семьи, поездок и активных выходных.</p><a href="#request" data-country-link="Не определился">Обсудить подбор ↗</a></div></article>
-          <article class="showcase-card"><div class="showcase-image"><img src="https://images.unsplash.com/photo-1597404294360-feeeda04612e?auto=format&fit=crop&w=900&q=80" alt="Современный автомобиль — иллюстрация к подбору" loading="lazy"><span class="showcase-tag">03 / ТЕХНОЛОГИИ</span></div><div class="showcase-copy"><span>ГИБРИДЫ И ЭЛЕКТРОМОБИЛИ</span><h3>Технологии на каждый день</h3><p>Подберём подходящий формат под ваши маршруты.</p><a href="#request" data-country-link="Не определился">Обсудить подбор ↗</a></div></article>
-        </div>
-        <div class="showcase-bottom"><span>RANG SELECT — подбор, а не вымышленное наличие</span><a href="#search">Задать параметры поиска ↗</a></div>
-      </div>
-    </section>
-    <section class="section section-dark" id="process">
-      <div class="container">
-        <div class="section-heading heading-split">
-          <div>
-            <p class="eyebrow"><span class="eyebrow-dot"></span> Процесс</p>
-            <h2>Понятный путь<br><em>к своему автомобилю.</em></h2>
-          </div>
-          <p class="section-intro">Разбиваем большую задачу на последовательные шаги, чтобы вы понимали, что уже сделано и какое решение нужно следующим.</p>
-        </div>
-
-        <div class="process-list">
-          <article class="process-item">
-            <span class="process-number">01</span>
-            <div class="process-main"><h3>Обсуждаем задачу</h3><p>Уточняем бюджет, предпочтения, желаемую комплектацию и важные ограничения.</p></div>
-            <span class="process-mark" aria-hidden="true">↗</span>
-          </article>
-          <article class="process-item">
-            <span class="process-number">02</span>
-            <div class="process-main"><h3>Подбираем варианты</h3><p>Сопоставляем доступные предложения с вашим запросом и объясняем различия.</p></div>
-            <span class="process-mark" aria-hidden="true">↗</span>
-          </article>
-          <article class="process-item">
-            <span class="process-number">03</span>
-            <div class="process-main"><h3>Проверяем и согласуем</h3><p>Обсуждаем состояние, документы, риски и расчёт расходов до принятия решения.</p></div>
-            <span class="process-mark" aria-hidden="true">↗</span>
-          </article>
-          <article class="process-item">
-            <span class="process-number">04</span>
-            <div class="process-main"><h3>Сопровождаем сделку</h3><p>После согласования помогаем пройти этапы покупки, логистики и получения автомобиля.</p></div>
-            <span class="process-mark" aria-hidden="true">↗</span>
-          </article>
-        </div>
-        <div class="process-foot"><span class="process-foot-mark">RA.</span><p>Сначала — ясность по задаче и цифрам.<br>Затем — решение, которое подходит именно вам.</p><a href="#request" class="button button-outline">Начать с запроса <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </section>
-
-    <section class="section section-paper" id="benefits">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Принципы работы</p>
-          <h2>Важен не просто автомобиль.<br><em>Важно, как вы его получите.</em></h2>
-        </div>
-        <div class="benefit-grid">
-          <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">↗</span><span class="benefit-label">01 / ВАШ ЗАПРОС</span><h3>Не навязываем готовый вариант</h3><p>Отталкиваемся от того, что важно вам: задачи, бюджет, состояние и оснащение автомобиля.</p></article>
-          <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">◉</span><span class="benefit-label">02 / ПРОВЕРКА</span><h3>Обсуждаем детали заранее</h3><p>Обращаем внимание на историю, состояние, документы и возможные дополнительные расходы.</p></article>
-          <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">⌁</span><span class="benefit-label">03 / ПРОЗРАЧНОСТЬ</span><h3>Показываем логику расчёта</h3><p>Разбираем составляющие стоимости и проговариваем, от чего зависит итоговая сумма.</p></article>
-          <article class="benefit-card"><span class="benefit-icon" aria-hidden="true">↔</span><span class="benefit-label">04 / СОПРОВОЖДЕНИЕ</span><h3>Остаёмся на связи по этапам</h3><p>Вы понимаете текущий статус и знаете, какой шаг предстоит дальше.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section request-section" id="request">
-      <div class="container request-layout">
-        <div class="request-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Первый шаг</p>
-          <h2>Расскажите,<br>какой автомобиль <em>ищем.</em></h2>
-          <p>Оставьте вводные — они помогут начать предметный разговор о подборе и возможных расходах.</p>
-          <div class="request-side-note"><span class="note-line"></span><span>Можно начать даже с идеи, марки или примерного бюджета.</span></div>
-        </div>
-
-        <form class="request-form" id="request-form">
-          <div class="form-heading"><span>ЗАПРОС НА ПОДБОР</span><span>01 — 04</span></div>
-          <p class="field-label" id="country-label">Откуда рассматриваем автомобиль?</p>
-          <div class="country-options" role="group" aria-labelledby="country-label">
-            <button type="button" class="country-option is-selected" data-country="Япония" aria-pressed="true">Япония</button>
-            <button type="button" class="country-option" data-country="Южная Корея" aria-pressed="false">Южная Корея</button>
-            <button type="button" class="country-option" data-country="Китай" aria-pressed="false">Китай</button>
-            <button type="button" class="country-option" data-country="Не определился" aria-pressed="false">Не определился</button>
-          </div>
-
-          <div class="form-row">
-            <div class="field">
-              <label class="field-label" for="car-type">Тип автомобиля</label>
-              <select id="car-type" name="carType">
-                <option value="">Пока не решил</option>
-                <option>Седан</option>
-                <option>Кроссовер / SUV</option>
-                <option>Минивэн</option>
-                <option>Электромобиль / гибрид</option>
-                <option>Другой тип</option>
-              </select>
-            </div>
-            <div class="field">
-              <label class="field-label" for="budget">Примерный бюджет</label>
-              <select id="budget" name="budget">
-                <option value="">Выберите диапазон</option>
-                <option>До 1,5 млн ₽</option>
-                <option>1,5–2,5 млн ₽</option>
-                <option>2,5–4 млн ₽</option>
-                <option>От 4 млн ₽</option>
-                <option>Нужен расчёт</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="field">
-            <label class="field-label" for="details">Что важно учесть?</label>
-            <textarea id="details" name="details" rows="3" placeholder="Марка, модель, год, пожелания или ссылка на автомобиль"></textarea>
-          </div>
-          <button class="button button-primary form-submit" type="submit">Сформировать запрос <span aria-hidden="true">↗</span></button>
-          <p class="form-privacy">Пока это демонстрационная форма: данные не отправляются на сервер. После согласования контакта подключим реальную отправку заявок.</p>
-          <div class="form-feedback" id="form-feedback" aria-live="polite" hidden>
-            <strong>Запрос сформирован</strong>
-            <p id="request-summary"></p>
-            <button type="button" class="copy-request" id="copy-request">Скопировать текст запроса</button>
-            <span class="copy-status" id="copy-status" aria-live="polite"></span>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="section section-light faq-section" id="faq">
-      <div class="container faq-layout">
-        <div class="faq-intro">
-          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> FAQ</p>
-          <h2>Что важно<br>знать <em>заранее?</em></h2>
-          <p>Если у вас остался вопрос, начнём с него — не обязательно приходить с готовым техническим заданием.</p>
-          <a class="text-link" href="#request">Задать свой вопрос <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="faq-list">
-          <details class="faq-item">
-            <summary>С чего начать подбор автомобиля?<span aria-hidden="true"></span></summary>
-            <p>Опишите задачу, примерный бюджет и несколько пожеланий. Если пока нет конкретной модели, можно начать с класса автомобиля и сценария использования.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Можно ли узнать итоговую стоимость заранее?<span aria-hidden="true"></span></summary>
-            <p>Можно подготовить предварительный расчёт по конкретному автомобилю и исходным данным. Итог зависит от самого предложения, комплектации, логистики, оформления и действующих правил.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Как понять, подходит ли автомобиль по состоянию?<span aria-hidden="true"></span></summary>
-            <p>До принятия решения нужно изучить доступные сведения об автомобиле, его историю, состояние и документы. Конкретный состав проверки зависит от страны и источника покупки.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Обязательно ли знать модель и комплектацию?<span aria-hidden="true"></span></summary>
-            <p>Нет. Достаточно обозначить бюджет, тип кузова и то, что для вас важнее всего. Подходящие варианты можно определить в процессе обсуждения.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Работаете только с одним рынком?<span aria-hidden="true"></span></summary>
-            <p>Сайт ориентирован на подбор автомобилей из Японии, Южной Кореи и Китая. Выбор рынка зависит от ваших целей, бюджета и конкретной модели.</p>
-          </details>
-        </div>
-      </div>
-    </section>
+    
+<section class="f-section f-catalog" id="showcase"><div class="figma-container">
+ <div class="f-heading f-heading-split"><div><p class="f-eyebrow">[ ПОДБЕРИ СЕБЕ АВТО ]</p><h2>КАТАЛОГ АВТОМОБИЛЕЙ<br>С АКТУАЛЬНЫМИ ЦЕНАМИ</h2></div><div class="f-tabs" role="group" aria-label="Страна каталога"><button class="is-active" data-catalog-tab="Китай">🇨🇳 Китай</button><button data-catalog-tab="Корея">🇰🇷 Корея</button><button data-catalog-tab="Япония">🇯🇵 Япония</button></div></div>
+ <div class="f-catalog-placeholder"><div class="f-catalog-placeholder-top"><span>RANG AUTO / CATALOG</span><span>01 — 03</span></div><div class="f-catalog-placeholder-body"><span class="f-catalog-symbol">↗</span><h3>Ваш автомобиль<br>начинается с выбора</h3><p>Здесь появятся актуальные автомобили и цены после подключения каталога.</p></div></div>
+ <div class="f-catalog-action"><span>Каталог будет интегрирован отдельно.</span><a class="f-outline-button" href="#request">Оставить запрос ↗</a></div>
+ </div></section>
+<section class="f-section f-process" id="process"><div class="figma-container"><p class="f-eyebrow">[ КАК МЫ РАБОТАЕМ ]</p><h2>Ваш путь к новому автомобилю</h2><div class="f-process-grid">
+ <article><span class="f-step-number">01</span><span class="f-step-icon">◎</span><h3>Заявка и подбор</h3><p>Озвучиваете бюджет и задачи — обсуждаем подходящие автомобили и предварительный расчёт.</p></article>
+ <article><span class="f-step-number">02</span><span class="f-step-icon">▤</span><h3>Договор</h3><p>Согласовываем условия сотрудничества и фиксируем договорённости в договоре.</p></article>
+ <article><span class="f-step-number">03</span><span class="f-step-icon">⌕</span><h3>Проверка и выкуп</h3><p>Изучаем доступные сведения об автомобиле, согласовываем покупку.</p></article>
+ <article><span class="f-step-number">04</span><span class="f-step-icon">⇢</span><h3>Доставка</h3><p>Организуем логистику выбранного автомобиля по согласованному маршруту.</p></article>
+ <article><span class="f-step-number">05</span><span class="f-step-icon">▧</span><h3>Таможня</h3><p>Сопровождаем необходимые таможенные процедуры и оформление документов.</p></article>
+ <article><span class="f-step-number">06</span><span class="f-step-icon">✓</span><h3>Выдача автомобиля</h3><p>Передаём автомобиль и согласованный комплект документов.</p></article>
+ </div></div></section>
+<section class="f-section f-promos" id="promotions"><div class="figma-container"><p class="f-eyebrow">[ ВЫГОДНЫЕ ПРЕДЛОЖЕНИЯ ]</p><h2>АКЦИИ И ПРЕДЛОЖЕНИЯ</h2><div class="f-promo-grid">
+ <article><span>01 / ПРЕДЛОЖЕНИЕ</span><h3>Приведи друга</h3><p>Узнайте условия программы рекомендаций у менеджера.</p><a href="#contacts">Уточнить условия ↗</a></article>
+ <article><span>02 / ПРЕДЛОЖЕНИЕ</span><h3>Русификация авто</h3><p>Уточните, для каких моделей доступна локализация и на каких условиях.</p><a href="#contacts">Подробнее ↗</a></article>
+ <article><span>03 / ПРЕДЛОЖЕНИЕ</span><h3>Детейлинг</h3><p>Спросите о доступных предложениях по подготовке автомобиля к выдаче.</p><a href="#contacts">Подробнее ↗</a></article>
+ </div></div></section>
+<section class="f-section f-geography" id="directions"><div class="figma-container"><p class="f-eyebrow">[ НАПРАВЛЕНИЕ ИМПОРТА ]</p><h2>География поставок РАНГ АВТО</h2><div class="f-geography-layout"><div class="f-geography-map" role="img" aria-label="Направления импорта: Китай, Южная Корея, Япония — Россия"><span class="f-map-title">АЗИЯ <span>→</span> РОССИЯ</span><span class="f-map-country c1">🇨🇳 Китай</span><span class="f-map-country c2">🇰🇷 Южная Корея</span><span class="f-map-country c3">🇯🇵 Япония</span><span class="f-map-destination">📍 Россия</span><svg viewBox="0 0 680 330" aria-hidden="true" preserveAspectRatio="none"><path d="M140 170 Q340 45 520 150 M270 250 Q380 95 520 150 M410 270 Q450 180 520 150" fill="none" stroke="#bb925b" stroke-width="2" stroke-dasharray="7 7"/></svg></div><div class="f-geography-cards"><article><b>01</b><h3>Китай</h3><p>Современные модели и широкий выбор комплектаций.</p></article><article><b>02</b><h3>Южная Корея</h3><p>Разнообразные модели для города и путешествий.</p></article><article><b>03</b><h3>Япония</h3><p>Большой выбор автомобилей с историей продаж.</p></article></div></div></div></section>
+<section class="f-section f-benefits" id="benefits"><div class="figma-container"><p class="f-eyebrow">[ ПОЧЕМУ РАНГ АВТО ]</p><h2>Покупка автомобиля без сложностей</h2><div class="f-benefit-grid">
+ <article><span>01 ↗</span><h3>Подбор под бюджет</h3><p>Отталкиваемся от ваших задач и пожеланий.</p></article><article><span>02 ◈</span><h3>Проверка автомобиля</h3><p>Обсуждаем состояние и доступные сведения до покупки.</p></article><article><span>03 ◷</span><h3>Прозрачный расчёт</h3><p>Объясняем составляющие итоговой стоимости.</p></article><article><span>04 ⇢</span><h3>Сопровождение</h3><p>Помогаем пройти этапы покупки и доставки.</p></article><article><span>05 ▤</span><h3>Документы</h3><p>Разбираем вопросы оформления и регистрации.</p></article><article><span>06 ◎</span><h3>Связь с командой</h3><p>Обсуждаем статус заказа и следующие шаги.</p></article>
+ </div></div></section>
+<section class="f-section f-reviews" id="reviews"><div class="figma-container"><p class="f-eyebrow">[ ОТЗЫВЫ КЛИЕНТОВ ]</p><h2>РЕАЛЬНЫЕ ОТЗЫВЫ</h2><div class="f-review-grid"><article><div class="f-video-placeholder">▶</div><p>Видеоотзыв клиента</p><small>Материал будет добавлен после согласования.</small></article><article><div class="f-video-placeholder">▶</div><p>Выдача автомобиля</p><small>Материал будет добавлен после согласования.</small></article><article><div class="f-video-placeholder">▶</div><p>История покупки</p><small>Материал будет добавлен после согласования.</small></article></div></div></section>
+<section class="f-section f-finance"><div class="figma-container"><p class="f-eyebrow">[ ФИНАНСОВЫЕ ВОЗМОЖНОСТИ ]</p><h2>Покупка автомобиля на ваших условиях</h2><p class="f-finance-intro">Поможем разобраться с доступными способами оплаты. Условия кредитования уточняются непосредственно в банке.</p><a class="f-outline-button" href="#contacts">Обсудить покупку ↗</a></div></section>
+<section class="f-section f-faq" id="faq"><div class="figma-container"><p class="f-eyebrow">[ ПРОЗРАЧНО О ГЛАВНОМ ]</p><h2>Всё, что вы хотели знать об импорте авто</h2><div class="f-tabs f-faq-tabs" role="tablist" aria-label="Темы вопросов"><button role="tab" aria-selected="true" class="is-active" data-faq-tab="Общее">Общее</button><button role="tab" aria-selected="false" data-faq-tab="Гарантия">Гарантия</button><button role="tab" aria-selected="false" data-faq-tab="Оплата">Оплата</button><button role="tab" aria-selected="false" data-faq-tab="Логистика">Логистика</button><button role="tab" aria-selected="false" data-faq-tab="Документы">Документы</button><button role="tab" aria-selected="false" data-faq-tab="Проверка">Проверка</button></div><div id="f-faq-content" class="f-faq-list" aria-live="polite"></div></div></section>
+<section class="f-section f-blog" id="blog"><div class="figma-container"><p class="f-eyebrow">[ АВТОНОВОСТИ И БЛОГ ]</p><h2>Главное из мира автомобилей</h2><div class="f-blog-grid"><article><span>ОБЗОРЫ</span><h3>Как выбрать автомобиль из Азии</h3><p>На что обратить внимание перед началом подбора.</p></article><article><span>ИМПОРТ</span><h3>Из чего складывается цена под ключ</h3><p>Покупка, логистика, оформление и другие расходы.</p></article><article><span>ПОЛЕЗНОЕ</span><h3>Какие документы понадобятся</h3><p>Что стоит уточнить до покупки автомобиля.</p></article></div><p class="f-disclaimer">Карточки блога — демонстрация оформления; публикации будут добавлены отдельно.</p></div></section>
+<section class="f-section f-contacts" id="contacts"><div class="figma-container"><p class="f-eyebrow">[ КОНТАКТЫ ]</p><h2>Свяжитесь с нами удобным способом</h2><div class="f-contacts-grid"><div><h3>Телефон</h3><a href="tel:+79375055588">+7 (937) 505-55-88</a><h3>Почта</h3><a href="mailto:rangauto@mail.ru">rangauto@mail.ru</a></div><div><h3>Адреса офисов</h3><p>Краснодар, ул. Западный Обход, 29</p><p>Астрахань, ул. Славянская, 1л</p><h3>График работы</h3><p>Пн–Пт: 8:00–19:00<br>Сб–Вс: 8:00–17:00</p></div><div id="social-links"><h3>Мессенджеры</h3><p>Ссылки на Telegram и MAX будут подключены после предоставления адресов каналов.</p><a class="f-outline-button" href="tel:+79375055588">Заказать звонок ↗</a></div></div></div></section>
+<section class="f-section f-request" id="request"><div class="figma-container f-request-grid"><div><p class="f-eyebrow">[ ПОДБОР АВТОМОБИЛЯ ]</p><h2>Найдём автомобиль под ваши задачи и бюджет</h2><p>Расскажите, какой автомобиль вы ищете. Пока заявка формируется в виде текста, который можно скопировать.</p></div><form id="request-form" class="f-request-form"><div class="f-country-choices" role="group" aria-label="Страна"><button type="button" data-country="Япония" aria-pressed="true" class="is-selected">Япония</button><button type="button" data-country="Южная Корея" aria-pressed="false">Корея</button><button type="button" data-country="Китай" aria-pressed="false">Китай</button><button type="button" data-country="Не определился" aria-pressed="false">Не знаю</button></div><label>Тип автомобиля<select id="car-type"><option value="">Любой</option><option>Седан</option><option>Кроссовер</option><option>Внедорожник</option><option>Минивэн</option></select></label><label>Бюджет<select id="budget"><option value="">Пока не определился</option><option>До 1,5 млн ₽</option><option>1,5–2,5 млн ₽</option><option>2,5–4 млн ₽</option><option>От 4 млн ₽</option></select></label><label>Пожелания<textarea id="details" rows="3" placeholder="Марка, модель, год, комплектация..."></textarea></label><button class="f-solid-button" type="submit">Сформировать запрос ↗</button><small>Демонстрационная форма: данные не отправляются на сервер.</small><div id="form-feedback" class="f-form-feedback" hidden><strong>Запрос сформирован</strong><pre id="request-summary"></pre><button type="button" id="copy-request">Скопировать запрос</button><span id="copy-status" aria-live="polite"></span></div></form></div></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-main">
-      <a class="brand brand-footer" href="#top" aria-label="РАНГ АВТО — наверх">
-        <span class="brand-mark" aria-hidden="true">R<span>A</span></span>
-        <span class="brand-name"><strong>РАНГ</strong><small>AUTO</small></span>
-      </a>
-      <p>Подбор и импорт автомобилей<br>из Японии, Южной Кореи и Китая.</p>
-      <a class="footer-up" href="#top">НАВЕРХ <span aria-hidden="true">↑</span></a>
-    </div>
-    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> РАНГ АВТО</span><span>Сайт в разработке · условия и контакты будут добавлены перед запуском</span></div>
-  </footer>
+  <footer class="f-footer site-footer"><div class="figma-container"><div class="f-footer-grid"><div><a class="f-footer-logo" href="#top">РАНГ <span>АВТО</span></a><p>Импорт автомобилей из Китая, Кореи и Японии. Помогаем выбрать, купить и доставить автомобиль.</p><small>ООО «Ранг Авто»<br>ИНН 3000026854<br>ОГРН 1263000003573</small></div><div><h3>Каталог автомобилей</h3><a href="#showcase">Авто из Китая</a><a href="#showcase">Авто из Кореи</a><a href="#showcase">Авто из Японии</a><a href="#showcase">Автомобили в наличии</a></div><div><h3>Компания</h3><a href="#benefits">О компании</a><a href="#process">Как купить</a><a href="#promotions">Акции</a><a href="#reviews">Отзывы</a><a href="#faq">Вопросы и ответы</a><a href="#blog">Блог</a></div><div><h3>Контакты</h3><a href="tel:+79375055588">+7 (937) 505-55-88</a><a href="mailto:rangauto@mail.ru">rangauto@mail.ru</a><p>Краснодар, ул. Западный Обход, 29</p><a href="#contacts">Все контакты ↗</a></div></div><div class="f-footer-bottom"><span>© <span id="current-year">2026</span> РАНГ АВТО</span><span>Политика конфиденциальности и пользовательское соглашение — документы готовятся к публикации.</span><a href="#top">Наверх ↑</a></div></div></footer>
 </body>
 </html>

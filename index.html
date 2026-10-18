@@ -19,70 +19,37 @@
 <body>
   <a class="skip-link" href="#main">Перейти к содержанию</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="РАНГ АВТО — на главную">
-        <span class="brand-mark" aria-hidden="true">R<span>A</span></span>
-        <span class="brand-name"><strong>РАНГ</strong><small>AUTO</small></span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-        <span class="sr-only">Открыть меню</span>
-      </button>
-
-      <nav class="main-nav" id="main-nav" aria-label="Главная навигация">
-        <a href="#showcase">Каталог</a><a href="#search">Подбор авто</a><a href="#directions">Направления</a>
-        <a href="#process">Как работаем</a>
-        <a href="#benefits">Преимущества</a>
-        <a href="#faq">Вопросы</a>
-      </nav>
-      <a class="header-cta" href="#request">Обсудить подбор <span aria-hidden="true">↗</span></a>
-    </div>
-  </header>
+  <header class="site-header" id="top">
+  <div class="announcement"><div class="figma-container announcement-inner"><span>Узнавайте первыми о новых поступлениях с выгодными ценами — в наших каналах</span><div class="announcement-links"><a href="#social-links" aria-label="Наш Telegram">↗ Telegram</a><a href="#social-links" aria-label="Наш канал MAX">↗ MAX</a><a href="tel:+79375055588">8 (937) 505-55-88</a></div></div></div>
+  <div class="figma-container header-inner">
+    <a class="brand figma-brand" href="#top" aria-label="РАНГ АВТО — главная"><span class="brand-mark" aria-hidden="true">R<span>A</span></span><span class="brand-name"><strong>РАНГ</strong><small>АВТО</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><span class="sr-only">Открыть меню</span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Главная навигация"><a href="#showcase">Каталог</a><a href="#search">Калькулятор</a><a href="#benefits">О компании</a><a href="#contacts">Контакты</a></nav>
+    <div class="header-icons" aria-hidden="true"><span>⌕</span><span>♡</span></div>
+    <a class="header-cta" href="#request">Заказать звонок</a>
+  </div>
+</header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Автомобили из Японии, Кореи и Китая</p>
-          <h1>Ваш следующий автомобиль — <em>из Азии.</em></h1>
-          <p class="hero-lead">Подберём автомобиль под ваши задачи и бюджет, поможем с проверкой, покупкой и доставкой. Один понятный маршрут — от первого запроса до получения машины.</p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#search">Подобрать автомобиль <span aria-hidden="true">↗</span></a>
-            <a class="button button-quiet" href="#process"><span class="play-icon" aria-hidden="true">▶</span> Как это работает</a>
-          </div>
-
-          <div class="hero-notes">
-            <div class="hero-note">
-              <span class="note-number">01</span>
-              <span><strong>Под ваш запрос</strong><small>Не случайный выбор из наличия</small></span>
-            </div>
-            <div class="hero-note">
-              <span class="note-number">02</span>
-              <span><strong>По этапам</strong><small>Понятно, что происходит дальше</small></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="visual-label visual-label-top"><span class="pulse"></span> ПОДБОР · ПРОВЕРКА · ДОСТАВКА</div>
-          <div class="hero-photo-wrap">
-            <img class="hero-photo" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85" alt="Спортивный автомобиль на дороге — иллюстрация к подбору авто" fetchpriority="high">
-            <div class="photo-shade"></div>
-            <div class="photo-caption">
-              <span class="caption-kicker">RANG AUTO / IMPORT</span>
-              <strong>Движение<br>к вашей цели.</strong>
-            </div>
-            <div class="photo-index"><span>01</span><span class="index-line"></span><span>03</span></div>
-          </div>
-          <div class="visual-label visual-label-bottom"><span>ЯПОНИЯ</span><i></i><span>ЮЖНАЯ КОРЕЯ</span><i></i><span>КИТАЙ</span></div>
-        </div>
-      </div>
-      <div class="hero-bottom-line container"><span>RANG AUTO</span><span>Импорт автомобилей с вниманием к деталям</span><span class="scroll-cue">ЛИСТАЙТЕ ВНИЗ ↓</span></div>
-    </section>
+    <section class="figma-hero" aria-labelledby="hero-title">
+  <div class="figma-container">
+    <p class="figma-hero-kicker">Импорт авто из Китая, Кореи и Японии с 2018 года</p>
+    <div class="figma-country-switch" role="group" aria-label="Выберите страну">
+      <button class="figma-country is-active" type="button" data-hero-country="Китай"><span class="country-flag">🇨🇳</span> Китай</button>
+      <button class="figma-country" type="button" data-hero-country="Корея"><span class="country-flag">🇰🇷</span> Корея</button>
+      <button class="figma-country" type="button" data-hero-country="Япония"><span class="country-flag">🇯🇵</span> Япония</button>
+    </div>
+    <h1 id="hero-title">АВТО ИЗ <span id="hero-country-name">КИТАЯ</span><br>ПОД КЛЮЧ <span class="hero-duration">ОТ 25 ДНЕЙ</span></h1>
+    <p class="figma-hero-description">Подберём, проверим, растаможим и привезём до вашего города из Китая, Кореи и Японии</p>
+    <div class="figma-hero-actions"><a class="figma-primary" href="#request">Получить расчёт под ключ <span aria-hidden="true">↗</span></a><a class="figma-secondary" href="#showcase">Смотреть каталог <span aria-hidden="true">↗</span></a></div>
+    <div class="figma-hero-stats">
+      <div class="figma-stat"><span class="stat-symbol">◷</span><div><strong>8+ лет</strong><small>на рынке импорта</small></div></div>
+      <div class="figma-stat"><span class="stat-symbol">▣</span><div><strong>3 400+</strong><small>авто привезли</small></div></div>
+      <div class="figma-stat"><span class="stat-symbol">⌖</span><div><strong>2</strong><small>филиала в РФ</small></div></div>
+      <div class="figma-stat"><span class="stat-symbol">♢</span><div><strong>Гарантия</strong><small>на ДВС и КПП</small></div></div>
+    </div>
+  </div>
+</section>
 
     <section class="ticker" aria-label="Направления работы">
       <div class="ticker-track">

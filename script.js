@@ -144,3 +144,41 @@
    const item=cases[button.dataset.heroCountry];if(name)name.textContent=item[0];if(duration)duration.textContent=item[1];
  }));
 })();
+
+/* Figma catalog tabs (visual-only; integration by external catalog provider). */
+document.querySelectorAll('[data-catalog-tab]').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('[data-catalog-tab]').forEach(other=>other.classList.toggle('is-active',other===btn));
+ const title=document.querySelector('.f-catalog-placeholder-top span:first-child');
+ if(title)title.textContent='RANG AUTO / '+btn.dataset.catalogTab.toUpperCase();
+}));
+/* FAQ topic tabs with accessible disclosure panels. */
+const faqData={
+ 'Общее':[
+ ['Почему выгодно покупать автомобиль из Азии, а не в России?','Стоимость и выбор зависят от конкретной модели, комплектации, курса валют и действующих платежей. Сравнивать варианты лучше по полному расчёту под ключ.'],
+ ['Чем покупка через РАНГ АВТО отличается от самостоятельного заказа?','Можно обсудить подбор, проверку, логистику и оформление в рамках одного процесса. Конкретный перечень услуг определяется договором.'],
+ ['Что значит «проходной» и «непроходной» автомобиль?','Так неформально называют автомобили с разными условиями таможенного оформления. Правила и ставки зависят от характеристик и даты ввоза.'],
+ ['Что делать, если выбранный автомобиль не укладывается в бюджет?','Можно рассмотреть другую комплектацию, модель, год выпуска или рынок покупки.'],
+ ['Как контролировать покупку и доставку?','Порядок информирования о ходе заказа согласовывается с менеджером.'],
+ ['Сколько занимает покупка и доставка?','Срок зависит от страны, автомобиля, маршрута, таможенных процедур и других обстоятельств. Точный ориентир обсуждается перед заказом.']
+ ],
+ 'Гарантия':[['Есть ли гарантия на автомобиль?','Условия и объём гарантийных обязательств необходимо уточнить в договоре для конкретного автомобиля.'],['На что распространяется гарантия?','Перечень узлов, срок и исключения фиксируются в согласованных документах.']],
+ 'Оплата':[['Как формируется стоимость под ключ?','Расчёт может включать стоимость автомобиля, перевозку, таможенные платежи, оформление и услуги.'],['Можно ли приобрести автомобиль в кредит?','Возможность кредитования и условия зависят от банка и программы.']],
+ 'Логистика':[['Из каких стран доставляете автомобили?','Рассматриваем автомобили из Китая, Южной Кореи и Японии.'],['Как узнать срок доставки?','Срок рассчитывается индивидуально с учётом маршрута и этапов оформления.']],
+ 'Документы':[['Какие документы оформляются?','Состав документов зависит от страны ввоза и характеристик автомобиля. Уточняйте перечень до заключения договора.'],['Можно ли поставить автомобиль на учёт?','Порядок регистрации зависит от документов и соответствия автомобиля действующим требованиям.']],
+ 'Проверка':[['Как проверяется состояние автомобиля?','Доступный объём проверки зависит от источника покупки, рынка и конкретного автомобиля.'],['Можно ли запросить историю автомобиля?','Обсудите с менеджером доступные отчёты и документы по выбранному варианту.']]
+};
+function renderFigmaFaq(topic){
+ const host=document.getElementById('f-faq-content');if(!host)return;
+ host.replaceChildren();
+ (faqData[topic]||[]).forEach(([question,answer])=>{
+ const d=document.createElement('details'),s=document.createElement('summary'),p=document.createElement('p');
+ s.textContent=question;p.textContent=answer;d.append(s,p);host.append(d);
+ });
+ document.querySelectorAll('[data-faq-tab]').forEach(b=>{const active=b.dataset.faqTab===topic;b.classList.toggle('is-active',active);b.setAttribute('aria-selected',String(active));});
+}
+document.querySelectorAll('[data-faq-tab]').forEach(b=>b.addEventListener('click',()=>renderFigmaFaq(b.dataset.faqTab)));
+renderFigmaFaq('Общее');
+/* New Figma form country controls are handled by existing request-form logic. */
+document.querySelectorAll('.f-country-choices [data-country]').forEach(btn=>btn.addEventListener('click',()=>{
+ document.querySelectorAll('.f-country-choices [data-country]').forEach(other=>other.classList.toggle('is-selected',other===btn));
+}));
